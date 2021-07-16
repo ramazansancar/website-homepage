@@ -1,0 +1,352 @@
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Ramazan Sancar, https://www.ramazansancar.com.tr">
+    <link rel="icon" href="assets/img/fav/favicon.ico">
+    <title>Sosyal Ağlar</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/offcanvas/">
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <!--<script src="https://kit.fontawesome.com/f267af0694.js" crossorigin="anonymous"></script>-->
+    <script src="font-awesome.js" crossorigin="anonymous"></script>
+    <!-- Sosyal İconlar Boyutlandırma -->
+    <link href="sosyal-icon.css" rel="stylesheet">
+     <!-- Özel Css -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body class="" id="body">
+    <nav class="navbar navbar-expand-md fixed-top navbar-white bg-white" id="nav_class">
+      <a class="navbar-brand" href="#">Offcanvas navbar</a>
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Switch account</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" role="search" method="get" action="https://blog.ramazansancar.com.tr/">
+          <input class="form-control mr-sm-3" id="search-field" type="search" value="" name="s" placeholder="Blog 'da ara" title="Arama sonuçları:" aria-label="Bir şeyleri bulamadın galiba">
+          <button class="btn btn-outline-info my-2 my-sm-0 search-submit" type="submit">Arama Yap</button>
+        </form>
+	</div>
+      </div>
+    </nav>
+
+    <!--
+    <div class="nav-scroller bg-white box-shadow">
+      <nav class="nav nav-underline">
+        <a class="nav-link active" href="#">Dashboard</a>
+        <a class="nav-link" href="#">
+          Friends
+          <span class="badge badge-pill bg-light align-text-bottom">27</span>
+        </a>
+        <a class="nav-link" href="#">Explore</a>
+        <a class="nav-link" href="#">Suggestions</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+      </nav>
+    </div>-->
+
+    <main role="main" class="container">
+      <div class="kutu_ana d-flex align-items-center p-3 my-3 text-white-50 rounded box-shadow" id="kutu_ana">
+        <img class="mr-3 rounded" src="assets/img/840fc919c6e970bf8ba3cb6fbd822d0c1041cc8b.png" alt="" width="48" height="48">
+        <div class="lh-100">
+          <h6 class="mb-0 text-white lh-100">Ramazan Sancar</h6>
+          <small>01/06/2000</small>
+        </div>
+      </div>
+
+      <div class="kutu my-3 p-3  rounded box-shadow" id="kutu">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
+        <div class="media pt-3" id="media_class">
+          <img data-src="holder.js/32x32?theme=thumb&bg=40bff5&fg=40bff5&size=1" alt="" class="mr-2 rounded">
+          <i class="fa fa-twitter fa-2x sosyal-icon"></i>
+          <!--<i class="fab fa-twitter fa-2x"></i>-->
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <a href="https://www.twitter.com/sancaramazan" target="_blank"><strong class="d-block text-gray-dark sosyal-link sosyal-yazi">@sancaramazan</strong></a>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
+        <div class="media pt-3" id="media_class">
+          <img data-src="holder.js/32x32?theme=thumb&bg=c13584&fg=c13584&size=1" alt="" class="mr-2 rounded"/>
+          <i class="fa fa-instagram fa-2x sosyal-icon"></i>
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <a href="https://www.instagram.com/sancaramazan" target="_blank"><strong class="d-block text-gray-dark sosyal-link sosyal-yazi">@sancaramazan</strong></a>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
+        <div class="media pt-3" id="media_class">
+          <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
+          <i class="fa fa-coffee fa-2x sosyal-icon"></i>
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <strong class="d-block text-gray-dark sosyal-yazi">@sancaramazan</strong>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
+        <div class="media pt-3" id="media_class">
+          <img data-src="holder.js/32x32?theme=thumb&bg=5d82d1&fg=5d82d1&size=1" alt="" class="mr-2 rounded">
+          <i class="fa fa-facebook fa-2x sosyal-icon"></i>
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <a href="https://www.facebook.com/ramazansancar" target="_blank"><strong class="d-block text-gray-dark sosyal-yazi">@ramazansancar</strong></a>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
+        <div class="media pt-3" id="media_class">
+          <img data-src="holder.js/32x32?theme=thumb&bg=238cc8&fg=238cc8&size=1" alt="" class="mr-2 rounded">
+          <i class="fa fa-linkedin fa-2x sosyal-icon"></i>
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <a href="https://www.linkedin.com/in/ramazansancar/" target="_blank"><strong class="d-block text-gray-dark sosyal-yazi">/in/ramazansancar</strong></a>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
+        <div class="media pt-3" id="media_class">
+          <img data-src="holder.js/32x32?theme=thumb&bg=ef4e41&fg=ef4e41&size=1" alt="" class="mr-2 rounded">
+          <i class="fa fa-youtube fa-2x sosyal-icon"></i>
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <strong class="d-block text-gray-dark sosyal-yazi">ramazansancar</strong>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
+        <div class="media pt-3" id="media_class">
+          <img data-src="holder.js/32x32?theme=thumb&bg=2ebd59&fg=2ebd59&size=1" alt="" class="mr-2 rounded">
+          <i class="fa fa-spotify fa-2x sosyal-icon"></i>
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <strong class="d-block text-gray-dark sosyal-yazi">ramazansancar</strong>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
+        <div class="media pt-3" id="media_class">
+          <img data-src="holder.js/32x32?theme=thumb&bg=6441a5&fg=6441a5&size=1" alt="" class="mr-2 rounded">
+          <i class="fa fa-twitch fa-2x sosyal-icon"></i>
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <strong class="d-block text-gray-dark sosyal-yazi">ramazansancar</strong>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
+        <div class="media pt-3" id="media_class">
+          <img data-src="holder.js/32x32?theme=thumb&bg=372213&fg=372213&size=1" alt="" class="mr-2 rounded">
+          <i class="fa fa-book fa-2x sosyal-icon"></i>
+          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <strong class="d-block text-gray-dark sosyal-yazi">ramazansancar</strong>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          </p>
+        </div>
+        <!--
+        <small class="d-block text-right mt-3">
+          <a href="#">All updates</a>
+        </small>-->
+      </div>
+
+      <div class="kutu my-3 p-3 rounded box-shadow" id="kutu">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Suggestions</h6>
+        <div class="media text-muted pt-3">
+          <img data-src="holder.js/32x32?theme=thumb&bg=40bff5&fg=40bff5&size=1" alt="" class="mr-2 rounded">
+          <i class="fa fa-twitter fa-2x sosyal-icon"></i>
+          <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <strong class="text-gray-dark">Ramazan Sancar</strong>
+              <!--<a href="https://www.twitter.com/sancaramazan" target="_blank" class="d-block text-gray-dark sosyal-link sosyal-yazi">Takip Et</a>-->
+              <a href="https://www.twitter.com/sancaramazan" target="_blank"><strong class="d-block text-gray-dark">@sancaramazan</strong></a>
+            </div>
+            <span class="d-block">@sancaramazan</span>
+          </div>
+        </div>
+        <div class="media text-muted pt-3">
+          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+          <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <strong class="text-gray-dark">Full Name</strong>
+              <a href="#">Follow</a>
+            </div>
+            <span class="d-block">@username</span>
+          </div>
+        </div>
+        <div class="media text-muted pt-3">
+          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+          <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <strong class="text-gray-dark">Full Name</strong>
+              <a href="#">Follow</a>
+            </div>
+            <span class="d-block">@username</span>
+          </div>
+        </div>
+        <div class="media text-muted pt-3" id="media_class">
+          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+          <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <strong class="text-gray-dark">Full Name</strong>
+              <a href="#">Follow</a>
+            </div>
+            <span class="d-block">@username</span>
+          </div>
+        </div>
+        <small class="d-block text-right mt-3">
+          <a href="#">All suggestions</a>
+        </small>
+      </div>
+    </main>
+  <div class="darkmode-options" style="position: fixed; bottom: 5px; background: darkgray; width: 100px; right: 10px; border-radius: 10px;">
+    <div class="text">Koyu Mod</div>
+    <div class="button" style="margin-right: 100%; margin-top: 30px; padding-left: 20%;">
+      <label class="switch">
+        <input type="checkbox" id="switch_control">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    </div>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <script src="offcanvas.js"></script>
+    <script src="function.js"></script>
+    <script src="cookie.js"></script>
+    <script src="cookiegdpr.js"></script>
+	<script type="text/javascript">
+	$.cookieMessage({
+	    'mainMessage': 'Bu web sitesi çerezleri kullanmaktadır. Bu web sitesini kullanarak bu çerezleri kullanmamıza izin vermiş olursunuz.', // This website uses cookies. By using this website you consent to our use of these cookies.
+	    'acceptButton': 'Kabul Et', // OK
+	    'fontSize': '12px', // 16px
+	    'backgroundColor': '#222',
+	});
+	</script>
+
+    <script type="text/javascript">
+      const switch_control = document.getElementById('switch_control');
+      const dark_mode_status = window.localStorage.getItem('dark_mode');
+      var body_class = document.getElementById("body");
+      var nav_class = document.getElementById("nav_class");
+      var kutu_ana = document.getElementById("kutu_ana");
+      var kutu = document.getElementById("kutu");
+      var media_class = document.getElementById("media_class");
+      var text_class = document.querySelector("div[class=text]");
+
+      // Dark Status Check is Empty
+      if(dark_mode_status === null){
+        window.localStorage.setItem('dark_mode','0');
+        console.log("Dark Mode Status: "+dark_mode_status);
+      }else{
+        console.log('Dark Mode Status: '+dark_mode_status);
+      }
+
+      const Dark_Page = () => {
+        body_class.classList.remove("bg-light");
+        body_class.classList.add("bg-dark");
+        nav_class.classList.remove("navbar-white","bg-white");
+        nav_class.classList.add("navbar-dark","bg-dark");
+        kutu_ana.classList.remove("bg-purple","box-border-white");
+        kutu_ana.classList.add("box-border-dark");
+        kutu.classList.add("box-border-dark");
+        kutu.classList.remove("bg-white","box-border-white");
+        media_class.classList.remove("text-muted");
+        media_class.classList.add("text-gray");
+        text_class.classList.add("text-white");
+      };
+
+      const Light_Page = () => {
+        body_class.classList.remove("bg-dark");
+        body_class.classList.add("bg-light");
+        nav_class.classList.remove("navbar-dark","bg-dark");
+        nav_class.classList.add("navbar-white","bg-white");
+        kutu_ana.classList.remove("box-border-dark");
+        kutu_ana.classList.add("bg-purple","box-border-white");
+        kutu.classList.remove("box-border-dark");
+        kutu.classList.add("bg-white","box-border-white");
+        media_class.classList.remove("text-gray");
+        media_class.classList.add("text-muted");
+        text_class.classList.remove("text-white");
+      };
+
+      // Dark Status Check
+      if(dark_mode_status === "1"){
+        switch_control.checked == false;
+        Dark_Page();
+      }else{
+        Light_Page();
+      }
+
+      switch_control.addEventListener('change', (event) => {
+        if (event.currentTarget.checked) {
+          window.localStorage.setItem('dark_mode','1');
+          Dark_Page();
+        }else{
+          window.localStorage.setItem('dark_mode','0');
+          Light_Page();
+        }
+      });
+
+      
+      
+
+      
+      
+
+
+
+/*
+      window.onload = function() {
+        $( ".sosyal-icon" ).hover(function() {
+          $( this ).toggleClass( "fa-spin" );
+          console.log("Dönüyoruzzzz :D");
+        });
+      };*/
+
+
+    /*
+      $(document).ready(function(){
+        /*
+        $(".sosyal-icon").hover(
+          function(){
+            $(this).addClass("fa-spin");
+            console.log("1");
+            //alert("a");
+          }, function(){
+            $(".sosyal-icon").removeClass("fa-spin");
+            //alert("a");
+            console.log("2");
+        });*//*
+          $( ".sosyal-icon" ).hover(function() {
+              $( this ).toggleClass( "fa-spin" );
+              });
+        //$( ".sosyal-icon" ).off( "mouseenter mouseleave" );
+
+      });
+*/
+      
+      
+    </script>
+  </body>
+</html>

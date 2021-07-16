@@ -1,0 +1,347 @@
+
+
+
+
+/*  Dark Mode Button */
+.darkmode-options { float: left; /*width: 100%;*/ padding: 10px; border: 1px solid #EEEEEE; }
+.darkmode-options .text { float: left; font-weight: 900; }
+.darkmode-options .button { /*float: right; padding-left: 5px;*/}
+.darkmode-options .switch { position: relative; display: inline-block; width: 50px; height: 24px; }
+.darkmode-options .switch input { opacity: 0; width: 0; height: 0; }
+.darkmode-options .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; -webkit-transition: .4s; transition: .4s;  border-radius: 24px; }
+.darkmode-options .slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 4px; bottom: 4px; background-color: white; -webkit-transition: .4s; transition: .4s; border-radius: 50%; }
+.darkmode-options input:checked + .slider { background-color: #2196F3; }
+.darkmode-options input:focus + .slider { box-shadow: 0 0 1px #2196F3; }
+.darkmode-options input:checked + .slider:before { -webkit-transform: translateX(26px); -ms-transform: translateX(26px); transform: translateX(26px); }
+
+
+
+/* -------- DARK MODE -- [START] -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+		/* Common ----------------------------------- done  */
+		body.darkmode {  background: #111111;  }
+		body.darkmode, body.darkmode input, body.darkmode textarea, body.darkmode button, body.darkmode select, body.darkmode a { color: #FFFFFF; }
+
+
+		/* Header ----------------------------------- */
+		body.darkmode .header { background: #222222; border-bottom-color: #333333; }
+
+		body.darkmode .header .centered .search-btn { color: #AAAAAA; background: #444444; }
+
+		body.darkmode .header.back .centered .search-btn { color: #AAAAAA; background: #444444; }
+		body.darkmode .header.promo .centered .search-btn { color: #AAAAAA; background: #444444; }
+
+		body.darkmode .search-modal { background: #222222; }
+		body.darkmode .search-modal .search-bar { background: #222222; border-bottom: none; }
+		body.darkmode .search-modal .search-bar .centered { background: #444444; }
+		body.darkmode .search-modal .search-bar .centered .search-input { color: #FFFFFF; }
+		body.darkmode .search-modal .search-results { background: #222222; }
+		body.darkmode .search-modal .search-results .centered .search-error .text { color: #E90000; }
+		body.darkmode .search-modal .search-results .centered .search-error .options { color: #80868B; }
+		body.darkmode .search-modal .search-results .centered .search-error .options a { color: #000000;  }
+		body.darkmode .search-modal .search-results .centered .search-no-results { color: #80868B; }
+
+
+		body.darkmode .search-modal .search-results .centered .search-promo-list { border-bottom: 1px solid #E6E6E6; }
+		body.darkmode .search-modal .search-results .centered .search-promo-list .item .item-link .logo {  background-color: #EEEEEE; }
+		body.darkmode .search-modal .search-results .centered .search-promo-list .item .app-open { color: #FFFFFF; background-color: #377EF7; }
+
+
+
+
+		/* Sidebar ----------------------------------- */
+		body.darkmode .sidebar { background: #222222 !important; }
+		body.darkmode .prevent-click { background: rgb(0,0,0,0.2); }
+		body.darkmode .sidebar .sb-app-list li a i { background-color: #F1F3F4; }
+
+		
+		body.darkmode .sidebar .darkmode-options { border-top-color: #444444; }
+		body.darkmode .sidebar .darkmode-options .slider { background-color: #555555; }
+		body.darkmode .sidebar .darkmode-options input:checked + .slider { background-color: #2196F3; }
+		body.darkmode .sidebar .darkmode-options input:focus + .slider { box-shadow: 0 0 1px #2196F3; }
+
+
+		/* Footer ----------------------------------- */
+		body.darkmode .footer {  background: #222222; border-top: none; }
+		body.darkmode .footer .centered .logo-links .links .main-link { color: #FFFFFF; }
+		body.darkmode .footer .centered .logo-links .links .sub-links { color: #999999; }
+		body.darkmode .footer .centered .logo-links .links .sub-links a { color: #FFFFFF;  }
+
+		body.darkmode .footer .centered .links-disclaimer .links { color: #999999; }
+		body.darkmode .footer .centered .links-disclaimer .links a { color: #FFFFFF; }
+
+
+		/* Content ----------------------------------- */
+
+		body.darkmode .ad .inner { background: #222222; border: none; }
+		body.darkmode .ad-mobile .inner {  background: #222222; border: none; }
+		body.darkmode .ad-mobile .inner .sample { background-color: #222222; }
+
+		body.darkmode .content { background: #111111; }
+
+
+		/* Index  */
+
+		body.darkmode .index-top h1 { color: #FFFFFF; }
+
+
+
+		body.darkmode .index-tab-selector { border-top-color: #444444; }
+		body.darkmode .index-tab-selector li a { color: #80868B; }
+		body.darkmode .index-tab-selector li.selected a { color: #FFFFFF; border-top-color: #FFFFFF; }
+
+
+		body.darkmode .index-middle .top-users {  border: none; background: #222222; }
+
+
+		/* Result */
+		body.darkmode .result-account .call-to-action { color: #80868B; }
+		body.darkmode .result-account .app-open { border: 1px solid #E6E6E6; }
+		body.darkmode .result-content .result-error .text { color: #E90000; }
+		body.darkmode .result-content .result-error .options { color: #80868B; }
+		body.darkmode .result-content .result-error .options a { color: #FFFFFF; }
+		body.darkmode .result-content .result-private { color: #80868B; }
+		body.darkmode .result-content .stories-list .story { border-bottom-color: #333333; }
+		body.darkmode .result-content .stories-list .story .story-post { background: #222222; box-shadow: 0 1px 4px 0 rgba(0,0,0,0.20); }
+		body.darkmode .result-content .stories-list .story .download-btn:active { background: #F8F8F8; }
+		body.darkmode .result-content .instadp .instadp-post { background: #F1F3F4; }
+		body.darkmode .result-content .instadp .download-btn:active { background: #F8F8F8; }
+		body.darkmode .result-content .highlight-selected { border-color: #444444; }
+		body.darkmode .result-content .highlight-selected .thumbnail { background: #F1F3F4; }
+
+
+		body.darkmode .result-tab-selector { border-top-color: #444444; }
+		body.darkmode .result-tab-selector li a .text { color: #80868B; }
+		body.darkmode .result-tab-selector li.selected a { border-top-color: #FFFFFF; }
+		body.darkmode .result-tab-selector li.selected a .text { color: #FFFFFF;  }
+
+
+		body.darkmode .result-content .profile-info { background: #222222; border: none; }
+		body.darkmode .result-content .profile-info .info { border-bottom-color: #111111; }
+
+
+
+		/* Articles */
+		body.darkmode .articles-top p { color: #80868B; }
+
+		body.darkmode .articles-list li { border: none; background-color: #222222; }
+		body.darkmode .articles-list li a .text .summary { color: #AAAAAA; }
+		body.darkmode .articles-list li a .thumbnail { border: none; }
+
+		body.darkmode .article-top .text p { color: #80868B; }
+		body.darkmode .article-top .thumbnail { border: none; }
+		body.darkmode .article-middle { border-top-color: #444444; }
+
+
+
+		/* Contact */
+		body.darkmode .contact-top p { color: #80868B; }
+		body.darkmode .contact-middle { border-top-color: #444444; }
+
+
+		/* Privacy */
+		body.darkmode .privacy-top p { color: #80868B; }
+		body.darkmode .privacy-middle { border-top-color: #444444; }
+
+
+		/* Promote */
+		body.darkmode .promote-nav { background: #222222; border-bottom-color: #333333; }
+		body.darkmode .promote-nav .centered .center-text { color: #FFFFFF; background: transparent; }
+		body.darkmode .promote-content { background: transparent; }
+
+		body.darkmode .promote-content .centered .desc { display: block; color: #80868B; }
+		body.darkmode .promote-content .centered .desc .big_btn { background: #205CD4; }
+		body.darkmode .promote-footer {  background: #222222; border-top-color: #333333; }
+		body.darkmode .promote-footer .centered { color: #CCCCCC; }
+
+
+
+		/* Media Assets ----------------------------------- */
+
+		/* -- Assets @1x -- */
+		body.darkmode .header .centered .menu-btn,
+		body.darkmode .header .centered .search-btn .icon,
+		body.darkmode .header .centered .back-btn,
+		body.darkmode .header .centered .promo-btn,
+		body.darkmode .search-modal .search-bar .centered .back-btn,
+		body.darkmode .search-modal .search-bar .centered .clear-btn,
+		body.darkmode .search-modal .search-bar .centered .search-btn,
+		body.darkmode .search-modal .search-results .centered .search-loading .loader,
+		body.darkmode .search-modal .search-results .centered .search-error .error-icon,
+		body.darkmode .search-modal .search-results .centered .results-promoted-list .account .app-open i,
+		body.darkmode .search-modal .search-results .centered .results-promoted-list .account .account-link .username .verified,
+		body.darkmode .search-modal .search-results .centered .results-history-list .account .account-link .username .verified,
+		body.darkmode .search-modal .search-results .centered .results-search-list .account .account-link .username .verified,
+		body.darkmode .search-modal .search-results .centered .results-history-list .account .remove-btn,
+		body.darkmode .promote-account-ad .centered .close-btn,
+		body.darkmode .sidebar .sb-nav-list li a i,
+		body.darkmode .index-promoted-users .users-list .account .account-link .username .verified,
+		body.darkmode .index-middle .top-users .users-list li a i,
+		body.darkmode .index-promoted-users .users-list .account .account-link .avatar i,
+		body.darkmode .index-promoted-users .users-list .account .app-open i,
+		body.darkmode .result-account .username .verified,
+		body.darkmode .result-account .app-open i,
+		body.darkmode .result-content .result-loading .loader,
+		body.darkmode .result-content .result-error .error-icon,
+		body.darkmode .result-content .stories-list .story .download-btn i,
+		body.darkmode .result-content .instadp .download-btn i,
+		body.darkmode .result-content .highlight-selected .close-btn,
+		body.darkmode .promoted-modal .action-bar .centered .promoted-text i,
+		body.darkmode .promoted-modal .promoted-accounts .centered .promoted-list .account .app-open i,
+		body.darkmode .promoted-modal .promoted-accounts .centered .promoted-list .account .account-link .username .verified,
+		body.darkmode .promoted-modal .promote-account-btn i,
+		body.darkmode .promoted-modal .promoted-accounts .featured-account .app-open i,
+		body.darkmode .promoted-modal .promoted-accounts .featured-account .bottom-details .username .verified,
+		body.darkmode .promote-nav .centered .back-btn,
+		body.darkmode .promote-section .centered .ps-sec .error-handling i,
+		body.darkmode .promote-section .centered .ps-sec .package-select .arrow,
+		body.darkmode .promote-section .centered .ps-sec .package-select .checkmark,
+		body.darkmode .promote-section .centered .ps-sec .payment-options .option.selected .radio-select,
+		body.darkmode .ps-account .username .verified,
+		body.darkmode .promote-section .centered .ps-sec .button .loader,
+		body.darkmode .promote-section .centered .ps-sec .pay-btn .lock,
+		body.darkmode .promote-section .centered .ps-sec .stats-list .stat .data .checkmark,
+		body.darkmode .promote-section .promotion-faqs .faq .question:before,
+		body.darkmode .loading-modal .modal .modal-body .text .loader
+		{ background-image: url("../images/images_sprite_dm@1x.png"); background-repeat: no-repeat; background-color: transparent; background-size: 40px 1040px; }
+
+
+		body.darkmode .result-tab-selector li a .icon
+		{ background-image: url("../images/images_sprite_tabs_dm@1x.png"); background-repeat: no-repeat; background-color: transparent; background-size: 40px 1040px; }
+
+		/* -- Assets @2x -- */
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+		body.darkmode .header .centered .menu-btn,
+		body.darkmode .header .centered .search-btn .icon,
+		body.darkmode .header .centered .back-btn,
+		body.darkmode .header .centered .promo-btn,
+		body.darkmode .search-modal .search-bar .centered .back-btn,
+		body.darkmode .search-modal .search-bar .centered .clear-btn,
+		body.darkmode .search-modal .search-bar .centered .search-btn,
+		body.darkmode .search-modal .search-results .centered .search-loading .loader,
+		body.darkmode .search-modal .search-results .centered .search-error .error-icon,
+		body.darkmode .search-modal .search-results .centered .results-promoted-list .account .app-open i,
+		body.darkmode .search-modal .search-results .centered .results-promoted-list .account .account-link .username .verified,
+		body.darkmode .search-modal .search-results .centered .results-history-list .account .account-link .username .verified,
+		body.darkmode .search-modal .search-results .centered .results-search-list .account .account-link .username .verified,
+		body.darkmode .search-modal .search-results .centered .results-history-list .account .remove-btn,
+		body.darkmode .promote-account-ad .centered .close-btn,
+		body.darkmode .sidebar .sb-nav-list li a i,
+		body.darkmode .index-promoted-users .users-list .account .account-link .username .verified,
+		body.darkmode .index-middle .top-users .users-list li a i,
+		body.darkmode .index-promoted-users .users-list .account .account-link .avatar i,
+		body.darkmode .index-promoted-users .users-list .account .app-open i,
+		body.darkmode .result-account .username .verified,
+		body.darkmode .result-account .app-open i,
+		body.darkmode .result-content .result-loading .loader,
+		body.darkmode .result-content .result-error .error-icon,
+		body.darkmode .result-content .stories-list .story .download-btn i,
+		body.darkmode .result-content .instadp .download-btn i,
+		body.darkmode .result-content .highlight-selected .close-btn,
+		body.darkmode .promoted-modal .action-bar .centered .promoted-text i,
+		body.darkmode .promoted-modal .promoted-accounts .centered .promoted-list .account .app-open i,
+		body.darkmode .promoted-modal .promoted-accounts .centered .promoted-list .account .account-link .username .verified,
+		body.darkmode .promoted-modal .promote-account-btn i,
+		body.darkmode .promoted-modal .promoted-accounts .featured-account .app-open i,
+		body.darkmode .promoted-modal .promoted-accounts .featured-account .bottom-details .username .verified,
+		body.darkmode .promote-nav .centered .back-btn,
+		body.darkmode .promote-section .centered .ps-sec .error-handling i,
+		body.darkmode .promote-section .centered .ps-sec .package-select .arrow,
+		body.darkmode .promote-section .centered .ps-sec .package-select .checkmark,
+		body.darkmode .promote-section .centered .ps-sec .payment-options .option.selected .radio-select,
+		body.darkmode .ps-account .username .verified,
+		body.darkmode .promote-section .centered .ps-sec .button .loader,
+		body.darkmode .promote-section .centered .ps-sec .pay-btn .lock,
+		body.darkmode .promote-section .centered .ps-sec .stats-list .stat .data .checkmark,
+		body.darkmode .promote-section .promotion-faqs .faq .question:before,
+		body.darkmode .loading-modal .modal .modal-body .text .loader
+		{ background-image: url("../images/images_sprite_dm@2x.png"); }
+
+		body.darkmode .result-tab-selector li a .icon
+		{ background-image: url("../images/images_sprite_tabs_dm@2x.png"); }
+
+		}
+
+		/* -- Assets @3x -- */
+		@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+
+		body.darkmode .header .centered .menu-btn,
+		body.darkmode .header .centered .search-btn .icon,
+		body.darkmode .header .centered .back-btn,
+		body.darkmode .search-modal .search-bar .centered .back-btn,
+		body.darkmode .search-modal .search-bar .centered .clear-btn,
+		body.darkmode .search-modal .search-bar .centered .search-btn,
+		body.darkmode .search-modal .search-results .centered .search-loading .loader,
+		body.darkmode .search-modal .search-results .centered .search-error .error-icon,
+		body.darkmode .search-modal .search-results .centered .results-promoted-list .account .app-open i,
+		body.darkmode .search-modal .search-results .centered .results-promoted-list .account .account-link .username .verified,
+		body.darkmode .search-modal .search-results .centered .results-history-list .account .account-link .username .verified,
+		body.darkmode .search-modal .search-results .centered .results-search-list .account .account-link .username .verified,
+		body.darkmode .search-modal .search-results .centered .results-history-list .account .remove-btn,
+		body.darkmode .promote-account-ad .centered .close-btn,
+		body.darkmode .sidebar .sb-nav-list li a i,
+		body.darkmode .index-promoted-users .users-list .account .account-link .username .verified,
+		body.darkmode .index-middle .top-users .users-list li a i,
+		body.darkmode .index-promoted-users .users-list .account .account-link .avatar i,
+		body.darkmode .index-promoted-users .users-list .account .app-open i,
+		body.darkmode .result-account .username .verified,
+		body.darkmode .result-account .app-open i,
+		body.darkmode .result-content .result-loading .loader,
+		body.darkmode .result-content .result-error .error-icon,
+		body.darkmode .result-content .stories-list .story .download-btn i,
+		body.darkmode .result-content .instadp .download-btn i,
+		body.darkmode .result-content .highlight-selected .close-btn,
+		body.darkmode .promoted-modal .action-bar .centered .promoted-text i,
+		body.darkmode .promoted-modal .promoted-accounts .centered .promoted-list .account .app-open i,
+		body.darkmode .promoted-modal .promoted-accounts .centered .promoted-list .account .account-link .username .verified,
+		body.darkmode .promoted-modal .promote-account-btn i,
+		body.darkmode .promoted-modal .promoted-accounts .featured-account .app-open i,
+		body.darkmode .promoted-modal .promoted-accounts .featured-account .bottom-details .username .verified,
+		body.darkmode .promote-nav .centered .back-btn,
+		body.darkmode .promote-section .centered .ps-sec .error-handling i,
+		body.darkmode .promote-section .centered .ps-sec .package-select .arrow,
+		body.darkmode .promote-section .centered .ps-sec .package-select .checkmark,
+		body.darkmode .promote-section .centered .ps-sec .payment-options .option.selected .radio-select,
+		body.darkmode .ps-account .username .verified,
+		body.darkmode .promote-section .centered .ps-sec .button .loader,
+		body.darkmode .promote-section .centered .ps-sec .pay-btn .lock,
+		body.darkmode .promote-section .centered .ps-sec .stats-list .stat .data .checkmark,
+		body.darkmode .promote-section .promotion-faqs .faq .question:before,
+		body.darkmode .loading-modal .modal .modal-body .text .loader
+		{ background-image: url("../images/images_sprite_dm@3x.png"); }
+
+
+		body.darkmode .result-tab-selector li a .icon
+		{ background-image: url("../images/images_sprite_tabs_dm@3x.png"); }
+
+
+		}
+
+
+
+		/* Media Queries ----------------------------------- */
+
+		/* -- Width 800px -- */
+		@media all and (max-width: 800px) {
+
+		/* Sidebar ----------------------------------- */
+		body.darkmode.sb-toggled .sidebar { border-color: #0A0A0A; }
+
+		/* Footer ----------------------------------- */
+		body.darkmode .footer .centered .logo-links { border-bottom-color: #444444; }
+
+		}
+
+
+		/* -- Width 640px -- */
+		@media all and (max-width: 640px) {
+
+		}
+
+
+		/* -- Width 340px -- */
+		@media all and (max-width: 340px) {
+
+		}
+
+/* -------- DARK MODE -- [END] ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */

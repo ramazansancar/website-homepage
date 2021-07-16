@@ -5,7 +5,7 @@
 /*  Dark Mode Button */
 .darkmode-options { float: left; /*width: 100%;*/ padding: 10px; border: 1px solid #EEEEEE; }
 .darkmode-options .text { float: left; font-weight: 700; }
-.darkmode-options .button { /*float: right; padding-left: 5px;*/}
+/*.darkmode-options .button { /*float: right; padding-left: 5px;*}*/
 .darkmode-options .switch { position: relative; display: inline-block; width: 50px; height: 24px; }
 .darkmode-options .switch input { opacity: 0; width: 0; height: 0; }
 .darkmode-options .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; -webkit-transition: .4s; transition: .4s;  border-radius: 24px; }

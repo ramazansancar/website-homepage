@@ -41,5 +41,8 @@
   },
   "engines": {
     "node": "14.x"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.7.2"
   }
 }

@@ -51,7 +51,7 @@ app.get('/', async ({ query }, response) => {
 	return response.sendFile('index.html', { root: './Pages/' });
 });
 
-app.listen(process.env.ExpressPort, () => {
+app.listen(process.env.ExpressPort || 80, () => {
     console.log(`[${nowTime(1)}] Uygulama burada çalışıyor: http://localhost:${process.env.ExpressPort}`);
 });
 

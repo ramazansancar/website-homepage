@@ -7,7 +7,7 @@
     "dev": "nodemon index.js",
     "start": "node index.js",
     "test": "node .",
-    "build": "npm install && netlify-lambda build express"
+    "build": "npm install && node index.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,6 @@
     "cookie-parser": "^1.4.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "netlify-lambda": "^1.6.3",
     "fs": "0.0.1-security",
     "mongoose": "^5.13.0",
     "node-cron": "^3.0.0",

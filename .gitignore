@@ -84,7 +84,7 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+/dist
 
 # Gatsby files
 .cache/
@@ -113,11 +113,11 @@ package-lock.json
 *.yml
 *.php
 
-/Pages/build/
-/Pages/docs/
-/Pages/_includes/
-/Pages/_layouts/
-/Pages/js/tests/
+Pages/build/
+Pages/docs/
+Pages/_includes/
+Pages/_layouts/
+Pages/js/tests/
 Pages/nuget/MyGet.ps1
 *.nuspec
 Pages/.editorconfig

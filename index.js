@@ -13,6 +13,8 @@ const express = require('express');
 const app = express();
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
+
+
 /**
  * Function Include
  */
@@ -20,7 +22,8 @@ app.use(cookieParser());
 const { nowTime } = require(`./Functions/nowTime.js`);
 const { msToTime } = require(`./Functions/msToTime.js`);
 
-const processDetails = () => {
+
+/*const processDetails = () => {
     let memoryUsage = util.inspect(process.memoryUsage());
     memoryUsage = JSON.parse(memoryUsage.replace('rss', '"rss"').replace('heapTotal', '"heapTotal"').replace('heapUsed', '"heapUsed"').replace('external', '"external"').replace('arrayBuffers', '"arrayBuffers"'));
   
@@ -28,7 +31,7 @@ const processDetails = () => {
     console.log(`Heap Usage:\nRSS: ${(memoryUsage.rss / 1048576).toFixed(2)}MB\nHeapTotal: ${(memoryUsage.heapTotal / 1048576).toFixed(2)}MB\nHeapUsed: ${(memoryUsage.heapUsed / 1048576).toFixed(2)}MB`);
     console.log(`Current Up Time: ${msToTime(Math.floor(process.uptime()),"0")}`);
     console.log('------------');
-};
+};*/
 
 app.use(express.static(__dirname + '/Pages/'));
 
@@ -51,8 +54,10 @@ app.get('/', async ({ query }, response) => {
 	return response.sendFile('index.html', { root: './Pages/' });
 });
 
-app.listen(process.env.ExpressPort, () => {
-    console.log(`[${nowTime(1)}] Uygulama burada çalışıyor: http://localhost:${process.env.ExpressPort}`);
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => {
+    console.log(`[${nowTime(1)}] Uygulama burada çalışıyor: http://localhost:${port}`);
 });
 
-console.log(processDetails());
+//console.log(processDetails());

@@ -24,15 +24,15 @@
   },
   "homepage": "https://github.com/ramazansancar/website-homepage#readme",
   "dependencies": {
-    "cookie-parser": "^1.4.5",
+    "cookie-parser": "^1.4.7",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1",
+    "express": "^4.22.2",
     "fs": "0.0.1-security",
-    "mongoose": "^6.4.6",
+    "mongoose": "^6.13.10",
     "node-cron": "4.0.0",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.7.0",
     "path": "^0.12.7",
-    "util": "^0.12.4"
+    "util": "^0.12.5"
   },
   "engines": {
     "node": "14.15.5",

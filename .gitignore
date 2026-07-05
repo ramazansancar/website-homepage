@@ -44,6 +44,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Pages/ is Bootstrap 4 source; its lock file exposes old build toolchain deps
+Pages/pnpm-lock.yaml
+
 # TypeScript v1 declaration files
 typings/
 
